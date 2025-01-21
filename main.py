@@ -3,7 +3,7 @@ from src import data_preparation, model_training, model_evaluation, model_infere
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Запуск проекта")
-    parser.add_argument("mode", choices=["prepare", "train", "evaluate", "infer"], help="Режим работы")
+    parser.add_argument("mode", choices=["prepare", "train", "evaluate", "infer"], nargs="?", default="prepare", help="Режим работы (по умолчанию: prepare)")
     args = parser.parse_args()
 
     if args.mode == "prepare":

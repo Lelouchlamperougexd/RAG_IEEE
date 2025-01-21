@@ -3,8 +3,8 @@ import json
 import os
 
 # Получение ключей API из переменных окружения (рекомендуемый способ)
-WEATHER_API_KEY = os.environ.get("WEATHER_API_KEY")
-TWOGIS_API_KEY = os.environ.get("TWOGIS_API_KEY")
+WEATHER_API_KEY = "6d9f8e84-7cbe-4cbd-842b-f7d21e52c36c"
+TWOGIS_API_KEY = "6d9f8e84-7cbe-4cbd-842b-f7d21e52c36c"
 
 if not WEATHER_API_KEY:
     raise ValueError("Необходимо установить переменную окружения WEATHER_API_KEY")
